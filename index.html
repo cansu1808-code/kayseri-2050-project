@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Hero Section</title>
+    <link rel="stylesheet" href="styles.css"> <!-- CSS bağlantısı -->
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="#" class="logo">Logo</a>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero-section">
+        <div class="hero-text">
+            <h1>Welcome to Our Website</h1>
+            <p>We help small businesses grow faster with modern web solutions.</p>
+            <button>Get Started</button>
+        </div>
+        <div class="hero-image">
+            <img src="https://via.placeholder.com/400" alt="Placeholder Image">
+        </div>
+    </header>
+
+</body>
+<a href="about.html">İkinci Sayfaya Git</a>
+</html>
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>İki Bölümlü Layout</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 0 20px;
+  }
+  section {
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+    gap: 20px;
+  }
+  section img {
+    width: 40%;
+    border-radius: 8px;
+    object-fit: cover;
+    height: 200px;
+  }
+  .text-container {
+    width: 60%;
+  }
+  /* İlk section: sol resim, sağ metin */
+  .section1 {
+    flex-direction: row;
+  }
+  /* İkinci section: sol metin, sağ resim */
+  .section2 {
+    flex-direction: row-reverse;
+  }
+  h2 {
+    margin-bottom: 15px;
+  }
+  p {
+    line-height: 1.5;
+    color: #444;
+  }
+</style>
+</head>
+<body>
+
+<section class="section1">
+  <img src="https://via.placeholder.com/350x200" alt="Resim Yer Tutucu" />
+  <div class="text-container">
+    <h2>Birinci Bölüm Başlığı</h2>
+    <p>Bu alanda birinci bölüm için açıklayıcı metin yer alacak. Sol tarafta resim, sağda metin bulunuyor.</p>
+  </div>
+</section>
+<section class="team-section">
+  <h2>Başlık</h2>
+  <h3>Alt Başlık</h3>
+
+  <div class="profile-grid">
+    <div><img src="https://via.placeholder.com/100" alt="Profil 1" /></div>
+    <div><img src="https://via.placeholder.com/100" alt="Profil 2" /></div>
+    <div><img src="https://via.placeholder.com/100" alt="Profil 3" /></div>
+    <div><img src="https://via.placeholder.com/100" alt="Profil 4" /></div>
+    <div><img src="https://via.placeholder.com/100" alt="Profil 5" /></div>
+    <div><img src="https://via.placeholder.com/100" alt="Profil 6" /></div>
+  </div>
+</section>
+<section class="pricing-section">
+  <h2>Başlık</h2>
+  <h3>Alt Başlık</h3>
+
+  <div class="card-container">
+    <div class="card">
+      <h2>Kart 1</h2>
+      <ul>
+        <li>Özellik 1</li>
+        <li>Özellik 2</li>
+        <li>Özellik 3</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Kart 2</h2>
+      <ul>
+        <li>Özellik A</li>
+        <li>Özellik B</li>
+        <li>Özellik C</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Kart 3</h2>
+      <ul>
+        <li>Özellik X</li>
+        <li>Özellik Y</li>
+        <li>Özellik Z</li>
+      </ul>
+    </div>
+  </div>
+</section>
+<section class="faq-section">
+  <h2>Başlık</h2>
+  <h3>Alt Başlık</h3>
+
+  <div class="faq-container">
+    <h3 class="question">Soru 1: Bu nasıl çalışır?</h3>
+    <p class="answer">Cevap 1: Bu sistem, kullanıcının sorularına hızlı cevap vermek için tasarlanmıştır.</p>
+
+    <h3 class="question">Soru 2: Nereden yardım alabilirim?</h3>
+    <p class="answer">Cevap 2: Destek için bizimle iletişime geçebilirsiniz.</p>
+
+    <h3 class="question">Soru 3: Ücretsiz deneme süresi var mı?</h3>
+    <p class="answer">Cevap 3: Evet, 30 günlük ücretsiz deneme sunmaktayız.</p>
+  </div>
+</section>
+
+<section class="section2">
+  <div class="text-container">
+    <h2>İkinci Bölüm Başlığı</h2>
+    <p>Bu alanda ikinci bölüm için metin bulunuyor. Bu sefer sol tarafta metin, sağda resim yer alıyor.</p>
+  </div>
+  <img src="https://via.placeholder.com/350x200" alt="Resim Yer Tutucu" />
+</section>
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Contact Section ve Footer</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  .contact-section {
+    display: flex;
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
+    gap: 30px;
+    align-items: center;
+  }
+  .contact-text {
+    flex: 1;
+  }
+  .contact-text h3 {
+    margin-bottom: 15px;
+    font-size: 1.8rem;
+  }
+  .contact-text p {
+    color: #555;
+    line-height: 1.6;
+  }
+  .contact-map {
+    flex: 1;
+  }
+  .contact-map img, 
+  .contact-map iframe {
+    width: 100%;
+    border-radius: 10px;
+    height: 250px;
+    display: block;
+  }
+  footer {
+    background-color: #222;
+    color: #eee;
+    padding: 30px 20px;
+    margin-top: 50px;
+    font-size: 0.9rem;
+  }
+  footer ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 15px;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+  }
+  footer ul li {
+    cursor: pointer;
+    color: #ccc;
+  }
+  footer ul li:hover {
+    color: #fff;
+  }
+  footer .copyright {
+    text-align: center;
+    border-top: 1px solid #444;
+    padding-top: 10px;
+    margin-top: 10px;
+    font-size: 0.8rem;
+    color: #888;
+  }
+</style>
+</head>
+<body>
+
+<section class="contact-section">
+  <div class="contact-text">
+    <h3>Alt Başlık</h3>
+    <p>Burada iletişimle ilgili kısa bir açıklama yer alır. Ziyaretçiler buradan adres, telefon veya diğer bilgileri kolayca görebilir.</p>
+  </div>
+  <div class="contact-map">
+    <!-- Yer tutucu olarak resim veya iframe kullanabilirsin -->
+    <img src="https://via.placeholder.com/400x250?text=Harita+Yer+Tutucu" alt="Harita Yer Tutucu" />
+    <!-- Örnek iframe Google Maps için -->
+    <!--
+    <iframe 
+      src="https://www.google.com/maps/embed?pb=!1m18!..." 
+      style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    -->
+  </div>
+</section>
+<footer>
+  <ul>
+    <li><a href="#">Anasayfa</a></li>
+    <li><a href="#">Hakkımızda</a></li>
+    <li><a href="#">Hizmetler</a></li>
+    <li><a href="#">İletişim</a></li>
+    <li><a href="#">SSS</a></li>
+  </ul>
+  <p style="text-align:center; font-size:0.9rem; color:#666; margin-top:10px;">
+    &copy; 2025 Tüm hakları saklıdır.
+  </p>
+</footer>
+
+<footer>
+  <ul>
+    <li>Anasayfa</li>
+    <li>Hakkımızda</li>
+    <li>Hizmetler</li>
+    <li>İletişim</li>
+    <li>SSS</li>
+  </ul>
+  <div class="copyright">
+    &copy; 2025 Tüm hakları saklıdır.
+  </div>
+</footer>
+
+</body>
+</html>
+
+</body>
+</html>
